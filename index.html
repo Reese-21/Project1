@@ -8,21 +8,40 @@
     <style>
         * {
             background-color: black;
-            margin: 30px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header {
+            position: fixed;
+            height: 60px;
+            width:100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: row;
+            border-style: solid;
+            border-color: rgba(128, 128, 128, 0.95);
+            justify-content: space-around;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
         }
 
         h1,
         h2,
         h3,
-        h4,
-        p {
+        h4 {
             font-family: Arial, Helvetica, sans-serif;
             color: whitesmoke;
+            margin: 60px;
         }
 
         a:link {
             color: whitesmoke;
             text-decoration: underline;
+
         }
 
         a:visited {
@@ -36,7 +55,13 @@
             text-decoration: underline;
         }
 
+        .a {
+            width: 30vw;
+            margin: 30px;
+        }
+
         .con {
+            margin-top: 60px;
             width: 60%;
             height: 60%;
             padding: 10px;
@@ -46,20 +71,29 @@
 
         .contents {
             width: 90vw;
-            border-style:dotted;
+            border-style: dotted;
             border-color: whitesmoke;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
+            margin: 60px;
         }
 
-        .a {
-            width:30vw;
-        }
 
         img {
-            width: 130px;
-            height: 80%;
+            width: 100%;
+            height: auto;
+        }
+
+        .img-container {
+            width: 200px;
+            /* desired width */
+            height: 160px;
+            /* desired height */
+            overflow: hidden;
+            /* hides the parts of the image that overflow the container */
+            border-style: solid;
+            border-color: rgba(128, 128, 128, 0.95);
         }
     </style>
 </head>
@@ -69,6 +103,14 @@
 
 
 <body>
+    <header>
+        <p><a href="about.html"> About</a> </p>
+        <p>Home</p>
+        <p>Maybe</p>
+    </header>
+
+
+
     <div class="con">
         <h1> My Homework Background Sound Collection </h1>
         <h4>Hello! This is a website where I collect things to listen to while I work. They're mostly game music,
@@ -81,13 +123,13 @@
     <div class="contents">
         <div class="a">
             <h3>Arknights</h3>
-            <div><img src="images-for-bgms\ark1.png" alt="arc1"></div>
+            <div class="img-container"><img src="images-for-bgms\ark1.png" alt="arc1"></div>
             <p><a href="https://www.bilibili.com/video/BV15b411u7iZ/?p=2&vd_source=59bed400bf7c38945d9ffad319e7a018"
                     target="_blank">Arknights Collection 1</a></p>
-            <div><img src="images-for-bgms\ark2.png" alt="arc2"></div>
+            <div class="img-container"><img src="images-for-bgms\ark2.png" alt="arc2"></div>
             <p><a href="https://www.bilibili.com/video/BV1uL4y1L78d/?spm_id_from=333.788.video.desc.click"
                     target="_blank">Arknights Collection 2</a></p>
-            <div><img src="images-for-bgms\ark3.png" alt="arc3"></div>
+            <div class="img-container"><img src="images-for-bgms\ark3.png" alt="arc3"></div>
             <p><a href="https://monster-siren.hypergryph.com/" target="_blank">Monster-siren official</a></p>
         </div>
 
@@ -95,13 +137,13 @@
 
         <div class="a">
             <h3>Genshin Impact</h3>
-            <div><img src="images-for-bgms\genshin1.png" alt="genshin1"></div>
+            <div class="img-container"><img src="images-for-bgms\genshin1.png" alt="genshin1"></div>
             <p><a href="https://www.bilibili.com/video/BV1nS4y1x7Ao?p=98&vd_source=59bed400bf7c38945d9ffad319e7a018
             " target="_blank">Genshin OST</a></p>
-            <div><img src="images-for-bgms\genshin2.jpg" alt="genshin2"></div>
+            <div class="img-container"><img src="images-for-bgms\genshin2.jpg" alt="genshin2"></div>
             <p><a href="https://www.bilibili.com/video/BV1Rj411p7b1/?spm_id_from=333.788.recommend_more_video.3&vd_source=59bed400bf7c38945d9ffad319e7a018
             " target="_blank"> Genshin Concert Shanghai</a></p>
-            <div><img src="images-for-bgms\genshin3.png" alt="genshin3"></div>
+            <div class="img-container"><img src="images-for-bgms\genshin3.png" alt="genshin3"></div>
             <p><a href="https://space.bilibili.com/381690688/channel/collectiondetail?sid=951912
             " target="_blank"> Marco listens to genshin music</a></p>
         </div>
@@ -110,18 +152,18 @@
 
         <div class="a">
             <h3>Star Rail</h3>
-            <div><img src="images-for-bgms\star rail1.png" alt="Star rail1"></div>
+            <div class="img-container"><img src="images-for-bgms\star rail1.png" alt="Star rail1"></div>
             <p><a href="https://www.bilibili.com/video/BV17M41157NR?p=33" target="_blank">Star Rail OST</a></p>
-            <div><img src="images-for-bgms\star rail2.png" alt="Star rail2"></div>
+            <div class="img-container"><img src="images-for-bgms\star rail2.png" alt="Star rail2"></div>
             <p><a href="https://www.bilibili.com/video/BV1oz4y147y6/?p=2&spm_id_from=pageDriver&vd_source=59bed400bf7c38945d9ffad319e7a018"
                     target="_blank">罗浮OST</a> </p>
         </div>
 
 
 
-        <div>
+        <div class="a">
             <h3>Persona 5</h3>
-            <div><img src="images-for-bgms\p5.png" alt="p5"></div>
+            <div class="img-container"><img src="images-for-bgms\p5.png" alt="p5"></div>
             <p><a href="https://www.youtube.com/playlist?list=PLZuZrScKjWOMAEEBEGTmAGtmmlg6QY7bC
         " target="_blank"> Persona 5 OST</a> </p>
         </div>
@@ -131,23 +173,23 @@
 
     <h2>One's with people talking</h2>
     <div class="contents">
-        <div>
+        <div class="a">
             <h3>Youtube Videos </h3>
-            <div><img src="images-for-bgms\va.png" alt="va"></div>
+            <div class="img-container"><img src="images-for-bgms\va.png" alt="va"></div>
             <p><a href="https://www.youtube.com/watch?v=g2sGQQ2Ob_Y&list=RDCMUC-u7EEXGnYcNwScaNmNefvA&start_radio=1&rv=g2sGQQ2Ob_Y&t=0
         " target="_blank"> Voice actors play among us</a> </p>
         </div>
 
 
 
-        <div>
+        <div class="a">
             <h3>TV Series</h3>
-            <div><img src="images-for-bgms\friends.png" alt="friends"></div>
+            <div class="img-container"><img src="images-for-bgms\friends.png" alt="friends"></div>
             <p><a href="https://www.yfsp.tv/play/wrlCCYxU6pF" target="_blank"> Friends</a></p>
         </div>
     </div>
 
-<p>Continue updating...</p>
+    <p>Continue updating...</p>
 
 </body>
 
