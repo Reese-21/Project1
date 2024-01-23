@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maybe</title>
+
+    <style>
+        * {
+            background-color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header {
+            height: 60px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: row;
+            border-style: solid;
+            border-color: rgba(128, 128, 128, 0.95);
+            justify-content: space-around;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+        }
+
+
+        a:link {
+            color: whitesmoke;
+            text-decoration: underline;
+
+        }
+
+        a:visited {
+            color: pink;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: rgb(239, 243, 18);
+            background-color: rgb(24, 17, 122);
+            text-decoration: underline;
+        }
+
+
+        .wrapper,
+        img {
+            display: inline-block;
+            size: 500px;
+            margin: 0 auto;
+        }
+
+        #two {
+            display: none;
+        }
+
+        .wrapper:hover #two {
+            display: inline-block;
+            size: 500px;
+            margin: auto;
+        }
+
+        .wrapper:hover #one {
+            display: none;
+            size: 500px;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <p>About</p>
+        <p><a href="index.html"> Home</a></p>
+        <p>Maybe</p>
+    </header>
+
+    <div class="wrapper">
+        <img id='one' src='images-for-bgms\ark1.png'>
+        <img id='two' src='images-for-bgms\ark2.png'>
+    </div>
+
+    <p>Continue updating...</p>
+
+</body>
+
+</html>
